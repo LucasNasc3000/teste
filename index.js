@@ -32,13 +32,15 @@ function Fibonacci(valor) {
 function inverter(valor) {
     let receberContador = [];
     let inverso = [];
-   for(let i = valor.length; i > 0; i--) {
+   for(let i = valor.length-1; i > -1; i--) {
       receberContador.push(i);
    }
    for(let i = 0; i < valor.length; i++) {
+      console.log(i);
       inverso.push(valor[receberContador[i]]);
    }
    console.log(inverso);
+   console.log(receberContador);
 }
 
 inverter("teste");
